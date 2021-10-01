@@ -1,0 +1,125 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.authorization-form {
+    height: 250px;
+    width: 300px;
+    background: #000000;
+    border-radius: 30px;
+}
+
+/*Изображение иконки авторизации*/
+.authorization-form .authorization-form__logo {
+    text-align: center;
+    margin-top: -33%;
+}
+
+.authorization-form img {
+    width: 150px;
+    height: 150px;
+}
+
+.authorization-form h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-top: -6%;
+    margin-bottom: 10%;
+}
+
+.authorization-form .authorization-form__input input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    outline: none;
+    background: transparent;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+
+.authorization-form .authorization-form__submit-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6%;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    padding: 4px;
+    color: black;
+    width: 80px;
+}
+
+/*
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #0e153a;
+    font-size: 12px;
+}
+
+.submit-button {
+    background-color: #455cd5;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+    text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 -1px 0 #311d47;
+    border-radius: 5px; !* Уголки *!
+
+}
+
+.submit-button:hover {
+    background-color: #182372;
+    transition: color 200ms linear, text-shadow 500ms linear;
+    color: #fff;
+    text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 0 10px rgba(223, 206, 228, 0.4), 0 0 2px #1d296c;
+}
+*/
