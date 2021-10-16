@@ -18,31 +18,31 @@ html, body {
 }
 
 .authorization-form {
-    height: 250px;
+    height: 270px;
     width: 300px;
     background: #000000;
     border-radius: 30px;
+    border: 3px solid #f8e401;
 }
 
-/*Изображение иконки авторизации*/
 .authorization-form__logo {
     text-align: center;
-    margin-top: -33%;
+    margin-top: -20%;
 }
 
 .authorization-form img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 .authorization-form h2 {
     color: #ffffff;
     text-align: center;
-    margin-top: -6%;
+    margin-top: 3%;
     margin-bottom: 10%;
 }
 
-.authorization-form__input input {
+.authorization-form__input {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -50,11 +50,9 @@ html, body {
     border: none;
     padding: 10px;
     font-size: 16px;
-    color: #ffffff;
     outline: none;
-    background: transparent;
-    text-align: center;
-    border-bottom: 1px solid #fff;
+    border-radius: 20px;
+    margin-bottom: 15px;
 }
 
 .authorization-form__submit-button {
@@ -69,4 +67,8 @@ html, body {
     padding: 4px;
     color: black;
     width: 80px;
+}
+
+.authorization-form__submit-button:hover {
+    background: lightyellow;
 }
