@@ -1,0 +1,98 @@
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(to left bottom, white, white);
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #000000;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border: 3px solid #f8e401;
+}
+
+.row {
+    text-align: center;
+    margin-top: -100px;
+}
+
+.login-box img {
+    width: 120px;
+    height: 120px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #000000;
+    text-align: center;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #c0c9f3;
+    font-size: 12px;
+}
+
+.submit-button {
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6%;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    color: black;
+    width: 100%;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.submit-button:hover {
+    background: lightyellow;
+}
