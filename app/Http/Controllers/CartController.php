@@ -7,7 +7,7 @@ use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
 
 /**
- * Контроллер для управления библиотекой
+ * Контроллер для управления корзиной
  */
 class CartController extends Controller
 {
@@ -19,7 +19,7 @@ class CartController extends Controller
     }
 
     /**
-     * Добавляет товар в библиотеку
+     * Добавляет товар в корзину
      * @param Request request
      * @return array
      */

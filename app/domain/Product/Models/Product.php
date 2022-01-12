@@ -14,9 +14,9 @@ class Product extends Model
         'title',
         'description',
         'rate',
+        'price',
         'img',
         'genre',
         'age'
     ];
-
 }

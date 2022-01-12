@@ -24,7 +24,8 @@ Route::prefix('products')->group(function(){
 });
 
 Route::prefix('cart')->group(function(){
-    Route::post('/', [\App\Http\Controllers\CartController::class, 'addToLibrary']);
+    Route::get('/{userId}', [\App\Http\Controllers\CartController::class, 'info']);
+    Route::post('/', [\App\Http\Controllers\CartController::class, 'addToCart']);
 });
 
 Route::prefix('user')->group(function(){
