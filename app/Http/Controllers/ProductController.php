@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Domain\Product\Models\Product;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Routing\Controller;
 
 /**
@@ -9,82 +11,23 @@ use Illuminate\Routing\Controller;
  */
 class ProductController extends Controller
 {
-    public $arr = array(
-        [
-            'id' => 1,
-            'title' => 'Карты, деньги, два ствола.',
-            'description' => 'Описание добавится в бд...',
-            'year' => 1998,
-            'price' => 500,
-            'rate' => 8.5,
-            'img' => 'C:\Users\khars\PhpstormProjects\Lab1\frontend\src\assets\images\posters\1.jpg'
-        ],
-        [
-            'id' => 2,
-            'title' => 'Большой куш.',
-            'description' => 'Описание добавится в бд...',
-            'year' => 2000,
-            'price' => 500,
-            'rate' => 8.5,
-            'img' => 'C:\Users\khars\PhpstormProjects\Lab1\frontend\src\assets\images\posters\2.jpg'
-        ],
-        [
-            'id' => 3,
-            'title' => 'Меч короля Артура.',
-            'description' => 'Описание добавится в бд...',
-            'year' => 2017,
-            'price' => 500,
-            'rate' => 7.1,
-            'img' => 'C:\Users\khars\PhpstormProjects\Lab1\frontend\src\assets\images\posters\3.jpg'
-        ],
-        [
-            'id' => 4,
-            'title' => 'Рок-н-рольщик.',
-            'description' => 'Описание добавится в бд...',
-            'year' => 2008,
-            'price' => 500,
-            'rate' => 7.8,
-            'img' => 'C:\Users\khars\PhpstormProjects\Lab1\frontend\src\assets\images\posters\4.jpg'
-        ],
-        [
-            'id' => 5,
-            'title' => 'Револьвер.',
-            'description' => 'Описание добавится в бд...',
-            'year' => 2005,
-            'price' => 500,
-            'rate' => 7.4,
-            'img' => 'C:\Users\khars\PhpstormProjects\Lab1\frontend\src\assets\images\posters\5.jpg'
-        ],
-        [
-            'id' => 6,
-            'title' => 'Джентльмены.',
-            'description' => 'Описание добавится в бд...',
-            'year' => 2019,
-            'price' => 500,
-            'rate' => 8.5,
-            'img' => 'C:\Users\khars\PhpstormProjects\Lab1\frontend\src\assets\images\posters\6.jpg'
-        ]
-    );
 
     /**
      * Список товаров.
-     * @return array[]
+     * @return array
      */
     public function list()
     {
-        return $this->arr;
+        return Product::query()->get();
     }
 
     /**
      * Информация о товаре
      * @param $id
-     * @return array
+     * @return Model|object
      */
     public function info($id)
     {
-        foreach ($this->arr as $item) {
-            if ($item['id'] == $id)
-                return $item;
-        }
+        return Product::query()->where(['id' => $id])->first();
     }
 }
