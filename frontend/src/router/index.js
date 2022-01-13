@@ -7,6 +7,7 @@ import Content from '@/components/ContentPage'
 import Product from '@/components/Product'
 import MainPage from '@/components/MainPage'
 import About from '@/components/About'
+import Cart from '@/components/Cart'
 
 Vue.component('app-about', Authorization)
 Vue.component('app-authorization', Authorization)
@@ -15,6 +16,7 @@ Vue.component('app-product', Product)
 Vue.component('app-header', Header)
 Vue.component('app-mainpage', MainPage)
 Vue.component('app-about', About)
+Vue.component('app-cart', Cart)
 Vue.use(VueRouter)
 
 const routes = [
